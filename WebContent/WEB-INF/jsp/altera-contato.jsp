@@ -18,13 +18,13 @@
 	
 	
 	<form action="alteraContato" method="POST">
-		Nome: <input type="text" name="nome" /><br>
-		Email: <input type="text" name="email" /><br>
-		Endereço: <input type="text" name="endereco" /><br>
-		Data Nascimento: <caelum:campoData id="dataNascimento"/><br>
+		Nome: <input type="text" name="nome" value="${contato.nome}" /><br>
+		Email: <input type="text" name="email" value="${contato.email}" /><br>
+		Endereço: <input type="text" name="endereco" value="${contato.endereco}" /><br>
+		Data Nascimento: <caelum:campoData id="dataNascimento" value="${contato.dataNascimento}" /><br>
 		
-		<input type="submit" value="Altera" />
-		
+		<input type="submit" value="Gravar" />
+	
 	</form>
 	
 	<c:import url="rodape.jsp"/>
